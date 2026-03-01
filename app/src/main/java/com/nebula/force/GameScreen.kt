@@ -80,7 +80,10 @@ fun GameScreen() {
                 val b = iterator.next()
                 val y = b.pos.y + b.vel.y
                 b.pos = Offset(b.pos.x, y)
-                if (y > 1.05f) iterator.remove()
+                if (y > 1.05f) {
+                    iterator.remove()
+                    continue
+                }
                 val hit = y > 0.87f && kotlin.math.abs(b.pos.x - playerX) < 0.07f
                 if (hit) {
                     iterator.remove()
