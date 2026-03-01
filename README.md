@@ -34,6 +34,14 @@ Prototip jugable d'un shoot'em up retro 16-bit per Android, implementat amb **Ko
 - Implementar habilitats (bomba/dash) i invulnerabilitat temporal.
 - Sistema de puntuació, checkpoints i progressió.
 - Àudio chiptune/FM i efectes de so retro.
+
+
+## CI (GitHub Actions)
+
+Aquest repositori inclou el workflow `.github/workflows/android-apk.yml` que:
+
+- compila `:app:assembleDebug` i `:app:assembleRelease`,
+- i publica els APKs com artifacts de la run (`nebula-force-debug-apk` i `nebula-force-release-apk-unsigned`).
 # NEBULA FORCE – Joc Android retro 16-bit
 
 Aquest document defineix **NEBULA FORCE** com a joc d’**Android** amb identitat arcade pura (1992–1995), adaptat a pantalla tàctil.
